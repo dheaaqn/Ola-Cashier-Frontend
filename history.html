@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/stylehistory.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="p-2">
+                            <img src="./assets/icon/menu-bar.png" alt="menu-bar"
+                                style="max-height: 30px; max-width: 30px;">
+                        </div>
+                        <div class="p-2">
+                            <a class="navbar-brand text-center">History</a>
+                        </div>
+                        <div class="p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <div class="d-flex justify-content-center">
+                    <ul class="list-unstyled component">
+                        <li><button onclick="location.href = 'homeselect.html';" type="button"
+                                class="btn bg-transparent"><img src="./assets/icon/cutlery.png" alt="cutlery"></button>
+                        </li>
+                        <li><button type="button" class="btn bg-transparent"><img src="./assets/icon/clipboard.png"
+                                    alt="clipboard"></button></li>
+                        <li><button type="button" class="btn bg-transparent" data-toggle="modal"
+                                data-target="#addMenu"><img src="./assets/icon/plus.png" alt="plus"></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-11">
+                <div class="grid-container">
+                    <div class="card card-1">
+                        <div class="card-body">
+                            <p class="card-title">Today's Income</p>
+                            <h4 class="card-text">Rp. 1.000.000</h4>
+                            <p class="card-text">+2% Yesterday</p>
+                        </div>
+                    </div>
+                    <div class="card card-2">
+                        <div class="card-body">
+                            <p class="card-title">Orders</p>
+                            <h4 class="card-text">3.270</h4>
+                            <p class="card-text">+5% Last Week</p>
+                        </div>
+                    </div>
+                    <div class="card card-3">
+                        <div class="card-body">
+                            <p class="card-title">This Year's Income</p>
+                            <h4 class="card-text">Rp. 1.000.000.000.000</h4>
+                            <p class="card-text">+10% Last Year</p>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div class="d-flex justify-content-between">
+                            <h5>Revenue</h5>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                    id="dropdownButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Month
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownButton">
+                                    <a class="dropdown-item">January</a>
+                                    <a class="dropdown-item">February</a>
+                                    <a class="dropdown-item">March</a>
+                                    <a class="dropdown-item">April</a>
+                                    <a class="dropdown-item">May</a>
+                                    <a class="dropdown-item">June</a>
+                                    <a class="dropdown-item">July</a>
+                                    <a class="dropdown-item">August</a>
+                                    <a class="dropdown-item">September</a>
+                                    <a class="dropdown-item">October</a>
+                                    <a class="dropdown-item">November</a>
+                                    <a class="dropdown-item">Desember</a>
+                                </div>
+                            </div>
+                        </div>
+                        <canvas id="lineChart" width="50%" height="10vh"></canvas>
+                    </div>
+                    <div class="recent-order">
+                        <div class="d-flex justify-content-between">
+                            <h5>Recent Order</h5>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                    id="dropdownButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Today
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownButton">
+                                    <a class="dropdown-item">Yesterday</a>
+                                    <a class="dropdown-item">Last Week</a>
+                                    <a class="dropdown-item">Last Month</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">INVOICES</th>
+                                        <th scope="col">CASHIER</th>
+                                        <th scope="col">DATE</th>
+                                        <th scope="col">ORDERS</th>
+                                        <th scope="col">AMOUNT</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">#10928</th>
+                                        <td>Cashier 1</td>
+                                        <td>06 October 2019</td>
+                                        <td>Ice Tea, Salad With peanut sauce</td>
+                                        <td>Rp. 120.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addMenu" tabindex="1" role="dialog" aria-labelledby="addMenuModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Items</h5>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-3 col-form-label">Name</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="image" class="col-sm-3 col-form-label">Image</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="image">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="price" class="col-sm-3 col-form-label">Price</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="price">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="category" class="col-sm-3 col-form-label">Category</label>
+                            <div class="col-sm-9">
+                                <select class="form-control">Category</select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal"
+                        style="background-color: #F24F8A; color: white;">Cancel</button>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #57CAD5; color: white;">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <script>
+        Chart.defaults.global.legend.labels.usePointStyle = true;
+
+        var ctx = document.getElementById('lineChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [
+                    'Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5',
+                    'Day 6', 'Day 7', 'Day 8', 'Day 9', 'Day 10',
+                    'Day 11', 'Day 12', 'Day 13', 'Day 14', 'Day 15',
+                    'Day 16', 'Day 17', 'Day 18', 'Day 19', 'Day 20',
+                    'Day 21', 'Day 22', 'Day 23', 'Day 24', 'Day 25',
+                    'Day 26', 'Day 27', 'Day 28', 'Day 29', 'Day 30'
+                ],
+                datasets: [{
+                    label: 'Last Months',
+                    fill: false,
+                    lineTension: 0,
+                    borderColor: 'rgb(255,184,198)',
+                    backgroundColor: 'rgb(255,184,198)',
+                    data: [
+                        10, 20, 30, 2, 14, 26, 38, 22, 31, 40,
+                        33, 26, 19, 12, 20, 28, 22, 35, 48, 39,
+                        30, 21, 12, 20, 28, 20, 12, 21, 30, 40
+                    ],
+                }, {
+                    label: 'This Months',
+                    fill: false,
+                    lineTension: 0,
+                    borderColor: 'rgb(0,241,255)',
+                    backgroundColor: 'rgb(0,241,255)',
+                    data: [
+                        0, 10, 20, 11, 20, 28, 22, 31, 40, 33,
+                        26, 19, 12, 21, 30, 39, 48, 40, 32, 36,
+                        22, 35, 48, 34, 40, 31, 22, 31, 40, 30
+                    ]
+                }],
+
+            },
+
+            // Configuration options go here
+            options: {
+                responsive: true,
+                legend: {
+                    display: true,
+                    position: 'bottom',
+                },
+                scales: {
+                    xAxes: [{
+                        display: false
+                    }],
+                    yAxes: [{
+                        display: true,
+                        ticks: {
+                            min: 0,
+                            max: 50,
+                            stepSize: 10
+                        }
+                    }]
+                },
+                elements: {
+                    point: {
+                        radius: 0
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

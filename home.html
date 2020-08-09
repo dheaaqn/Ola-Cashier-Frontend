@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>POS App</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-md-8 border-right">
+                <div class="bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="p-2">
+                            <img src="./assets/icon/menu-bar.png" alt="menu-bar">
+                        </div>
+                        <div class="p-2">
+                            <a class="navbar-brand text-center">Food Apps</a>
+                        </div>
+                        <div class="p-2">
+                            <img src="./assets/icon/search.png" alt="search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 border-left cart-header">
+                <div class="bg-white">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h4>Cart <span class="badge badge-pill badge-info">0</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-md-1">
+                <div class="d-flex justify-content-center">
+                    <ul class="list-unstyled component">
+                        <li><button onclick="location.href = 'homeselect.html';" type="button"
+                                class="btn bg-transparent"><img src="./assets/icon/cutlery.png" alt="cutlery"></button>
+                        </li>
+                        <li><button onclick="location.href = 'history.html';" type="button"
+                                class="btn bg-transparent"><img src="./assets/icon/clipboard.png"
+                                    alt="clipboard"></button></li>
+                        <li><button type="button" class="btn bg-transparent" data-toggle="modal"
+                                data-target="#addMenu"><img src="./assets/icon/plus.png" alt="plus"></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-7 scroll-product">
+                <div class="flex-container">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/image/img01.jpg" alt="espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Espresso</h5>
+                            <p class="card-text">Rp. 10.000</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/image/img02.jpg" alt="espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Coffe Latte</h5>
+                            <p class="card-text">Rp. 15.000</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/image/img03.jpg" alt="espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappucino</h5>
+                            <p class="card-text">Rp. 5.000</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/image/img04.jpg" alt="espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Velvet Latte</h5>
+                            <p class="card-text">Rp. 33.000</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/image/img05.jpg" alt="espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Choco Rum</h5>
+                            <p class="card-text">Rp. 28.000</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/image/img06.jpg" alt="espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Forest</h5>
+                            <p class="card-text">Rp. 30.000</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/image/img07.jpg" alt="espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Katsu Dabu-dabu</h5>
+                            <p class="card-text">Rp. 60.000</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/image/img08.jpg" alt="espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Salmon Truffle Teriyaki</h5>
+                            <p class="card-text">Rp. 60.000</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/image/img09.jpg" alt="espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Wiener Schnitzel</h5>
+                            <p class="card-text">Rp. 69.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/illustration/teacup-and-biscuit.png" alt="ill-empty" class="mx-auto d-block">
+                <h4 class="text-center">Your Cart is Empty</h4>
+                <p class="text-center font-weight-light">Please add some items from the menu</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addMenu" tabindex="1" role="dialog" aria-labelledby="addMenuModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Items</h5>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-3 col-form-label">Name</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="image" class="col-sm-3 col-form-label">Image</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="image">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="price" class="col-sm-3 col-form-label">Price</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="price">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="category" class="col-sm-3 col-form-label">Category</label>
+                            <div class="col-sm-9">
+                                <select class="form-control">Category</select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal"
+                        style="background-color: #F24F8A; color: white;">Cancel</button>
+                    <button type="button" class="btn btn-primary"
+                        style="background-color: #57CAD5; color: white;">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

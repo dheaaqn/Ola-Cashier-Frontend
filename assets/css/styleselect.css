@@ -1,0 +1,163 @@
+/* * {
+    overflow: hidden;
+} */
+
+.container-fluid .header .col-md-8 {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    height: 10vh;
+}
+
+.container-fluid .header .col-md-8 img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.container-fluid .header .col-md-8 .p-2 a {
+    font-weight: 600;
+}
+
+.container-fluid .header .col-md-4 {
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+    height: 10vh;
+}
+
+.container-fluid .content {
+    display: flex;
+}
+
+.container-fluid .content .col-md-1 {
+    /* height: 100vh; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container-fluid .content .col-md-1 ul li {
+    padding: 10px 0px 10px 0px;
+}
+
+.container-fluid .content .col-md-1 ul li img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.container-fluid .content .col-md-7 {
+    height: 90vh;
+    overflow: auto;
+    background: rgba(190, 195, 202, 0.3);
+    padding: 15px;
+}
+
+.container-fluid .content .col-md-7 .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-fluid .content .col-md-7 .flex-container .card {
+    width: 15rem;
+    border: transparent;
+    background: transparent;
+}
+
+.container-fluid .content .col-md-7 .flex-container .card img {
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container-fluid .content .col-md-4 {
+    /* height: 100vh; */
+    border: 1px solid #CECECE;
+}
+
+.container-fluid .content .col-md-4 .filled-cart {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .selected-items .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        'thumbnail menu-name menu-name menu-name menu-name'
+        'thumbnail inc-button inc-button price price';
+    padding: 10px;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .selected-items .grid-container .thumbnail {
+    grid-area: thumbnail;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .selected-items .grid-container .thumbnail img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .selected-items .grid-container .menu-name {
+    grid-area: menu-name;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .selected-items .grid-container .inc-button {
+    grid-area: inc-button;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .selected-items .grid-container .inc-button .form-group .input-group input {
+    border: 1px solid #82DE3A;
+    background: #FFFFFF;
+    max-width: 40px;
+    max-height: 48px;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .selected-items .grid-container .inc-button .form-group .input-group .input-group-btn {
+    background-color: #e6f8d8;
+    border: 1px solid #82DE3A;
+    border-radius: 0;
+    max-width: 40px;
+    max-height: 48px;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .selected-items .grid-container .inc-button .form-group .input-group .input-group-btn span {
+    color: #82DE3A;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .selected-items .grid-container .price {
+    grid-area: price;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .selected-items .grid-container .price p {
+    font-weight: 600;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .totalan .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        'label label label price'
+        'ppn ppn ppn ppn'
+        'btn-group btn-group btn-group btn-group'
+        'btn-group btn-group btn-group btn-group';
+    padding: 10px;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .totalan .grid-container .total-label {
+    grid-area: label;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .totalan .grid-container .total-price {
+    grid-area: price;
+    text-align: end;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .totalan .grid-container .ppn {
+    grid-area: ppn;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .totalan .grid-container .btn-group {
+    grid-area: btn-group;
+}
+
+.container-fluid .content .col-md-4 .filled-cart .totalan .grid-container .btn-group .column .col-md-12 {
+    padding: 9px 0px 9px 0px;
+}
