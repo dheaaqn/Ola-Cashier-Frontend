@@ -10,7 +10,7 @@ Membuat slicing halaman web dari mockup yang diberikan dengan requirements:
 - [x] Buat semirip mungkin dengan [mockup](https://www.figma.com/file/WfZqGAdTtiBgBfbS9zk7sQ/POS-App?node-id=0%3A1)
 - [ ] Responsive
 - [x] Menggunakan Bahasa Inggris untuk nama class atau id
-- [ ] Deploy di [Netlify](https://www.netlify.com/) 
+- [x] Deploy di [Netlify](https://nifty-kirch-eb144f.netlify.app)
 
 # Built With
 - HTML5
