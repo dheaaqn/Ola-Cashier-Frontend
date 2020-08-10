@@ -155,7 +155,8 @@
                                             <button id="down" class="btn bg-transparent" onclick=" down('0')"><span
                                                     class="fas fa-minus"></span></button>
                                         </div>
-                                        <input type="text" id="quantity" class="form-control input-number" value="1" />
+                                        <input type="text" id="quantity-1" class="form-control input-number"
+                                            value="1" />
                                         <div class="input-group-btn">
                                             <button id="up" class="btn bg-transparent" onclick="up('10')"><span
                                                     class="fas fa-plus"></span></button>
@@ -179,12 +180,13 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-btn">
-                                            <button id="down" class="btn bg-transparent" onclick=" down('0')"><span
+                                            <button id="down2" class="btn bg-transparent" onclick=" down2('0')"><span
                                                     class="fas fa-minus"></span></button>
                                         </div>
-                                        <input type="text" id="quantity" class="form-control input-number" value="1" />
+                                        <input type="text" id="quantity-2" class="form-control input-number"
+                                            value="1" />
                                         <div class="input-group-btn">
-                                            <button id="up" class="btn bg-transparent" onclick="up('10')"><span
+                                            <button id="up2" class="btn bg-transparent" onclick="up2('10')"><span
                                                     class="fas fa-plus"></span></button>
                                         </div>
                                     </div>
@@ -206,12 +208,13 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-btn">
-                                            <button id="down" class="btn bg-transparent" onclick=" down('0')"><span
+                                            <button id="down3" class="btn bg-transparent" onclick=" down3('0')"><span
                                                     class="fas fa-minus"></span></button>
                                         </div>
-                                        <input type="text" id="quantity" class="form-control input-number" value="1" />
+                                        <input type="text" id="quantity-3" class="form-control input-number"
+                                            value="1" />
                                         <div class="input-group-btn">
-                                            <button id="up" class="btn bg-transparent" onclick="up('10')"><span
+                                            <button id="up3" class="btn bg-transparent" onclick="up3('10')"><span
                                                     class="fas fa-plus"></span></button>
                                         </div>
                                     </div>
@@ -399,16 +402,44 @@
     <!-- JavaScript -->
     <script>
         function up(max) {
-            document.getElementById("quantity").value = parseInt(document.getElementById("quantity").value) + 1;
-            if (document.getElementById("quantity").value >= parseInt(max)) {
-                document.getElementById("quantity").value = max;
+            document.getElementById("quantity-1").value = parseInt(document.getElementById("quantity-1").value) + 1;
+            if (document.getElementById("quantity-1").value >= parseInt(max)) {
+                document.getElementById("quantity-1").value = max;
             }
         }
 
         function down(min) {
-            document.getElementById("quantity").value = parseInt(document.getElementById("quantity").value) - 1;
-            if (document.getElementById("quantity").value <= parseInt(min)) {
-                document.getElementById("quantity").value = min;
+            document.getElementById("quantity-1").value = parseInt(document.getElementById("quantity-1").value) - 1;
+            if (document.getElementById("quantity-1").value <= parseInt(min)) {
+                document.getElementById("quantity-1").value = min;
+            }
+        }
+
+        function up2(max) {
+            document.getElementById("quantity-2").value = parseInt(document.getElementById("quantity-2").value) + 1;
+            if (document.getElementById("quantity-2").value >= parseInt(max)) {
+                document.getElementById("quantity-2").value = max;
+            }
+        }
+
+        function down2(min) {
+            document.getElementById("quantity-2").value = parseInt(document.getElementById("quantity-2").value) - 1;
+            if (document.getElementById("quantity-2").value <= parseInt(min)) {
+                document.getElementById("quantity-2").value = min;
+            }
+        }
+
+        function up3(max) {
+            document.getElementById("quantity-3").value = parseInt(document.getElementById("quantity-3").value) + 1;
+            if (document.getElementById("quantity-3").value >= parseInt(max)) {
+                document.getElementById("quantity-3").value = max;
+            }
+        }
+
+        function down3(min) {
+            document.getElementById("quantity-3").value = parseInt(document.getElementById("quantity-3").value) - 1;
+            if (document.getElementById("quantity-3").value <= parseInt(min)) {
+                document.getElementById("quantity-3").value = min;
             }
         }
     </script>
