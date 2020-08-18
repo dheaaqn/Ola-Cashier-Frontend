@@ -1,5 +1,5 @@
-# POS App
-Point of Sale Web Application adalah tempat yang digunakan oleh market atau pengelola usaha untuk mempermudah transaksi dengan pelanggan dan mengoordinasikan data penjualan.
+# Ola Cashiér - POS Application
+Point of Sale Application adalah tempat yang digunakan oleh market atau pengelola usaha untuk mempermudah transaksi dengan pelanggan dan mengoordinasikan data penjualan.
 
 # Task
 Membuat slicing halaman web dari mockup yang diberikan dengan requirements:
